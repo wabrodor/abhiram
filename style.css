@@ -1,0 +1,100 @@
+html{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Pushster', cursive;
+    color:#fff;
+    min-height: 100%;
+    margin:0;
+    width:100%;
+    overflow: hidden;
+}
+.section{
+background:rgba(38, 31, 134, 0.7);
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+min-height:100vh;
+width:100%;
+margin:0;
+position: relative;
+}
+
+
+h1{
+color:#fff;
+font-size:60px;
+display:block;
+text-transform: uppercase;
+}
+.hero{
+    background:linear-gradient(100deg, rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.9)),url("https://cdn.pixabay.com/photo/2019/10/19/19/44/killer-4562153_960_720.jpg");
+    color:#fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+
+}
+.fuck{
+    position: absolute;
+top:50%;
+left: 50%;
+text-align: center;
+/* transform: translate(-50%, -50%); */
+transform:translateX(-200%);
+    place-items: center;
+    width:70%;
+    min-height:60vh;
+    background: rgb(16, 29, 54);
+    z-index:999;
+    border-radius:10px;
+    transition: 0.8s all ease-in-out;
+font-size:26px;
+padding: 0.5rem;
+opacity:0.8;
+
+}
+.active{
+transform: translate(-50%, -50%);
+transition: 0.8s all ease-in;
+}
+
+button{
+    background:yellow;
+    outline: 0;
+    border:0;
+    padding:1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+button:hover{
+    transform: scale(1.1);
+}
+.permanent{
+    position: absolute;
+    color:#fff;
+right:20%;
+width:100px;
+height:50px;
+bottom: 10px;
+font-size: 20px;
+text-transform: uppercase;
+padding:1rem;
+font-family:'Courier New', Courier, monospace;
+color:yellow;
+}
+
+.display{
+    display:none;
+}
+@media (max-width:600px){
+    .fuck{
+min-height: 50vh;
+font-size: 24px;
+
+    }
+}
